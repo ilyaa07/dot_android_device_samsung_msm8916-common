@@ -271,8 +271,6 @@ TARGET_LD_SHIM_LIBS := \
 BOARD_USES_QC_TIME_SERVICES := true
 
 # Vold
-BOARD_VOLD_DISC_HAS_MULTIPLE_MAJORS := true
-BOARD_VOLD_MAX_PARTITIONS := 67
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 
 # Wifi
