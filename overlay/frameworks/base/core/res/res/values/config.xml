@@ -210,4 +210,10 @@
          snapshots are disabled, and snapshots will only be stored at config_highResTaskSnapshotScale
          -->
     <item name="config_lowResTaskSnapshotScale" format="float" type="dimen">0.3</item>
+
+    <!-- Feature flag to enable memory efficient task snapshots that are used in recents optimized
+         for low memory devices and replace the app transition starting window with the splash
+         screen. -->
+    <bool name="config_lowRamTaskSnapshotsAndRecents">true</bool>
+
 </resources>
