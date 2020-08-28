@@ -41,6 +41,13 @@ TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
+# APEX
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+TARGET_FLATTEN_APEX := true
+
+# Low Memory Devices
+MALLOC_SVELTE := true
+
 # Audio
 AUDIO_CONFIG_PATH := hardware/qcom-caf/msm8916/audio/configs
 AUDIO_FEATURE_SAMSUNG_DUAL_SIM := true
