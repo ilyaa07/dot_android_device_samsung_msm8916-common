@@ -1,4 +1,4 @@
-#
+##
 # Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,6 +32,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 # APEX
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ld.config.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/swcodec/ld.config.txt
+
+# Low Memory Devices
+MALLOC_SVELTE := true
 
 # Assistant
 PRODUCT_PROPERTY_OVERRIDES += \
