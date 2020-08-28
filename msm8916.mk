@@ -199,6 +199,14 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
 # Display
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.use_fifo_ui=1 \
+    qemu.hw.mainkeys=1 \
+    debug.cpurend.vsync=false \
+    debug.sf.enable_gl_backpressure=1 \
+    debug.sf.latch_unsignaled=1
+
+# Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
@@ -368,6 +376,26 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mm.enable.smoothstreaming=true \
     mmp.enable.3g2=true
 
+# Memory optimization
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.am.reschedule_service=true \
+    ro.vendor.qti.sys.fw.bservice_enable=true \
+    dalvik.vm.madvise-random=true \
+    ro.lmk.low=1001 \
+    ro.lmk.medium=0 \
+    ro.lmk.critical=800 \
+    ro.lmk.critical_upgrade=false \
+    ro.lmk.upgrade_pressure=100 \
+    ro.lmk.downgrade_pressure=100 \
+    ro.lmk.kill_heaviest_task=true \
+    ro.lmk.kill_timeout_ms=15 \
+    ro.lmk.use_minfree_levels=true \
+    ro.lmk.enhance_batch_kill=true \
+    ro.lmk.vmpressure_file_min=80640 \
+    ro.config.zram.size=256 \
+    ro.config.zram.enabled=true \
+    ro.config.avoid_gfx_accel=true
+
 # Misc
 PRODUCT_PACKAGES += \
     curl \
@@ -460,6 +488,13 @@ PRODUCT_PACKAGES += \
 # RRO
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
+
+# SafetyNetM
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.clientidbase.am=android-samsung \
+    ro.com.google.clientidbase.gmm=android-samsung \
+    ro.com.google.clientidbase.ms=android-samsung \
+    ro.com.google.clientidbase.yt=android-samsung
 
 # Seccomp
 PRODUCT_COPY_FILES += \
