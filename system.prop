@@ -11,8 +11,7 @@ ro.hwui.path_cache_size=2
 ro.hwui.r_buffer_cache_size=1
 ro.hwui.texture_cache_size=8
 
-# Improve battery 
-wifi.supplicant_scan_interval=240
+# Improve battery
 pm.sleep_mode=4
 
 # Rendering Tweaks
@@ -33,9 +32,6 @@ persist.sys.composition.type=c2d
 persist.sys.ui.hw=1
 video.accelerate.hw=1
 
-# Enable GPU Acceleration
-
-
 
 persist.sys.composition.type=gpu
 debug.qc.hardware=true
@@ -51,8 +47,6 @@ persist.sampling_profiler=0
 hwui.render_dirty_regions=false
 hwui.disable_vsync=true
 
-# Saves some battery without reducing performances
-wifi.supplicant_scan_interval=497
 
 power.saving.mode=1
 
@@ -88,17 +82,9 @@ persist.sys.purgeable_assets=1
 # More free ram and apps load faster
 dalvik.vm.dexopt-flags=m=y
 
-# More RAM
-
-
-
-
-# Increase general Performance
-
 
 # Increase some Performance
 ro.secure=0
-
 
 
 # Reduce the black screen time of the proximity sensor
@@ -112,7 +98,7 @@ persist.service.pcsync.enable=0
 ro.ril.enable.a52=1
 ro.ril.enable.a53=0
 
-# Better call voice quality.
+# Better call voice quality
 ro.ril.enable.amr.wideband=1
 
 # Disable Bytecode Verification
@@ -123,7 +109,6 @@ dalvik.vm.dexopt-flags=m=y,v=n,o=v
 # Miscellaneous Tweaks for performance
 ro.config.hw_menu_unlockscreen=false
 persist.sys.use_dithering=0
-
 
 ro.mot.eri.losalert.delay=1000
 
@@ -136,15 +121,7 @@ media.stagefright.enable-aac=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-record=true
 
-# Wireless Tweaks
-
-
-# Video Acceleration Enabled And HW debugging
-
-
-
-
-debug.composition.type=gpu 
+debug.composition.type=gpu
 
 # art optimization
 dalvik.vm.image-dex2oat-filter=speed
