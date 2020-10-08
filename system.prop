@@ -34,17 +34,17 @@ persist.sys.ui.hw=1
 video.accelerate.hw=1
 
 # Enable GPU Acceleration
-debug.sf.hw=1
-video.accelerate.hw=1
-debug.performance.tuning=1
+
+
+
 persist.sys.composition.type=gpu
 debug.qc.hardware=true
 debug.qctwa.statusbar=1
-debug.qctwa.preservebuf=1
+
 debug.egl.profiler=1
-debug.egl.hw=1
+
 debug.composition.type=gpu
-hw3d.force=1
+
 ro.product.gpu.driver=1
 persist.sys.use_16bpp_alpha=1
 persist.sampling_profiler=0
@@ -53,9 +53,9 @@ hwui.disable_vsync=true
 
 # Saves some battery without reducing performances
 wifi.supplicant_scan_interval=497
-pm.sleep_mode=4
+
 power.saving.mode=1
-ro.ril.disable.power.collapse=0
+
 ro.vold.umsdirtyratio=20
 
 # Battery save
@@ -66,7 +66,7 @@ dalvik.vm.checkjni=false
 dalvik.vm.execution-mode=int:jit
 ro.ril.power_collapse=1
 power_supply.wakeup=enable
-ro.config.hw_fast_dormancy=1
+
 ro.config.hw_power_saving=1
 
 # Sensor Tweaks
@@ -89,22 +89,22 @@ persist.sys.purgeable_assets=1
 dalvik.vm.dexopt-flags=m=y
 
 # More RAM
-#persist.sys.purgeable_assets=1
-persist.service.pcsync.enable=0
-persist.service.lgospd.enable=0
+
+
+
 
 # Increase general Performance
-debug.performance.tuning=1
+
 
 # Increase some Performance
 ro.secure=0
-persist.sys.use_16bpp_alpha=1
-ro.product.gpu.driver=1
+
+
 
 # Reduce the black screen time of the proximity sensor
 ro.lge.proximity.delay=15
 mot.proximity.delay=15
-ro.ril.enable.amr.wideband=1
+
 
 # Smoothens UI
 persist.service.lgospd.enable=0
@@ -123,8 +123,8 @@ dalvik.vm.dexopt-flags=m=y,v=n,o=v
 # Miscellaneous Tweaks for performance
 ro.config.hw_menu_unlockscreen=false
 persist.sys.use_dithering=0
-persist.sys.purgeable_assets=1
-dalvik.vm.dexopt-flags=m=y
+
+
 ro.mot.eri.losalert.delay=1000
 
 # Smoother video streaming and tweak media
@@ -137,14 +137,13 @@ media.stagefright.enable-qcp=true
 media.stagefright.enable-record=true
 
 # Wireless Tweaks
-wifi.supplicant_scan_interval=240
+
 
 # Video Acceleration Enabled And HW debugging
-video.accelerate.hw=1
-debug.sf.hw=1
-debug.performance.tuning=1
-debug.egl.profiler=1 
-debug.egl.hw=1
+
+
+
+
 debug.composition.type=gpu 
 
 # art optimization
