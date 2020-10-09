@@ -75,7 +75,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.fm.transmitter=false
 
-# Google Play Store
+# Google Play Store? (OpenGLES)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
 
