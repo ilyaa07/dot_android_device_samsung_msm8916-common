@@ -21,7 +21,6 @@ TARGET_SPECIFIC_HEADER_PATH += $(COMMON_PATH)/include
 # Inherit from common
 -include device/samsung/qcom-common/BoardConfigCommon.mk
 
-BUILD_BROKEN_DUP_RULES := true
 
 # Architecture/platform
 BOARD_VENDOR := samsung
@@ -38,6 +37,8 @@ TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := cortex-a53
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
+# Allow overriding commands during build
+BUILD_BROKEN_DUP_RULES := true
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
@@ -206,6 +207,7 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/vendor/bin/mm-qcamera-daemon=22 \
     /system/vendor/bin/hw/rild=27
 
+
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
@@ -262,11 +264,13 @@ endif
 #endif
 
 # SELinux
-# include device/qcom/sepolicy-legacy/sepolicy.mk
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
 
+BOARD_SEPOLICY_DIRS += device/samsung/msm8916-common/sepolicy
+PLAT_PRIVATE_POLICY += device/samsung/msm8916-common/sepolicy/private
 SELINUX_IGNORE_NEVERALLOWS := true
-BOARD_SEPOLICY_DIRS += \
-    $(COMMON_PATH)/sepolicy_tmp
+#BOARD_SEPOLICY_DIRS += \
+#    $(COMMON_PATH)/sepolicy_tmp
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
