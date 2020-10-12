@@ -341,10 +341,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
 
 # System.prop tweaks
-TARGET_SYSTEM_PROP += \
-    device/samsung/msm8916-common/system.prop
-
-
+#TARGET_SYSTEM_PROP += \
+#    device/samsung/msm8916-common/system.prop
 
 # Security configuration file
 PRODUCT_COPY_FILES += \
