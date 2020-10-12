@@ -81,13 +81,6 @@ PRODUCT_COPY_FILES += \
 endif
 
 
-
-
-
-
-
-
-
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
@@ -95,9 +88,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libbase_shim \
     libbt-vendor
-
-
-
 
 # BoringSSL Hacks
 PRODUCT_PACKAGES += \
