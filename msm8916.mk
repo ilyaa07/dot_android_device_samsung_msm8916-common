@@ -47,7 +47,6 @@ PRODUCT_PACKAGES += \
     audio.primary.default \
     audio.r_submix.default \
     audio.usb.default \
-    libaudioresampler \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -94,7 +93,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     libcamera_shim \
-    libmm-qcamera \
     camera.msm8916 \
     Snap
 
@@ -127,14 +125,12 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
-    android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     gralloc.msm8916 \
     hwcomposer.msm8916 \
-    libgenlock \
     libtinyxml \
     libtinyxml2 \
     memtrack.msm8916
@@ -151,7 +147,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.1-service.widevine \
     android.hardware.drm@1.3-service.clearkey
 
 # Encryption
@@ -172,8 +167,7 @@ PRODUCT_PACKAGES += \
 
 # FS
 PRODUCT_PACKAGES += \
-    fsck.f2fs \
-    mkfs.f2fs
+    fsck.f2fs
 
 
 # Gatekeeper
@@ -245,9 +239,6 @@ PRODUCT_COPY_FILES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libextmedia_jni \
-    libdashplayer \
-    libdivxdrmdecrypt \
     libdrmclearkeyplugin \
     libstagefrighthw
 
@@ -260,17 +251,12 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libOmxEvrcEnc \
     libOmxQcelp13Enc \
-    libOmxSwVencMpeg4 \
     libOmxVdec \
-    libOmxVdecHevc \
-    libOmxVenc \
-    libOmxVidEnc \
-    libOmxVdpp
+    libOmxVenc
 
 # Misc
 PRODUCT_PACKAGES += \
     curl \
-    libbson \
     libcurl \
     libkeyutils \
     tcpdump
@@ -313,6 +299,7 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
+    fstab.qcom \
     init.class_main.sh \
     init.link_ril_db.sh \
     init.qcom.bt.sh \
@@ -399,10 +386,8 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service.legacy \
-    android.hardware.wifi.offload@1.0-service \
     hostapd \
     hostapd_cli \
-    iwconfig \
     libwpa_client \
     libwcnss_qmi \
     wcnss_service \
