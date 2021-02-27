@@ -209,7 +209,6 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0-java
 
-# HIDL
 PRODUCT_PACKAGES += \
     libhidltransport \
     libhidltransport.vendor \
