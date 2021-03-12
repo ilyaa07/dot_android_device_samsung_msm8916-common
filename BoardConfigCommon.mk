@@ -247,7 +247,7 @@ endif
 #endif
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/sepolicy.mk
+include device/qcom/sepolicy-legacy/sepolicy.mk
 
 BOARD_VENDOR_SEPOLICY_DIRS += device/samsung/msm8916-common/sepolicy/vendor
 PLAT_PRIVATE_POLICY += device/samsung/msm8916-common/sepolicy/private
