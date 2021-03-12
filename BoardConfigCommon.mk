@@ -88,7 +88,6 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 
 # Charger
 BOARD_CHARGER_SHOW_PERCENTAGE   := true
-BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
 # Dexpreopt
 ifeq ($(HOST_OS),linux)

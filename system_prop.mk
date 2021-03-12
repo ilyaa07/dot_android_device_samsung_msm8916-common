@@ -57,6 +57,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
+    ro.charger.disable_init_blank=true \
     ro.charger.enable_suspend=true
 
 # Connectivity Engine
