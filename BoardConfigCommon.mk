@@ -262,7 +262,7 @@ endif
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += device/samsung/msm8916-common/sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += device/samsung/msm8916-common/sepolicy/vendor
 PLAT_PRIVATE_POLICY += device/samsung/msm8916-common/sepolicy/private
 SELINUX_IGNORE_NEVERALLOWS := true
 #BOARD_SEPOLICY_DIRS += \
