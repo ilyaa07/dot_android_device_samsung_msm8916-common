@@ -15,13 +15,10 @@ ro.hwui.texture_cache_size=8
 pm.sleep_mode=4
 
 # Rendering Tweaks
-debug.composition.type=c2d
-debug.egl.hw=1
 debug.enabletr=true
 debug.overlayui.enable=1
 debug.qctwa.preservebuf=1
 debug.performance.tuning=1
-debug.sf.hw=1
 dev.pm.dyn_samplingrate=1
 hw3d.force=1
 ro.config.disable.hw_accel=false
@@ -31,25 +28,17 @@ ro.vold.umsdirtyratio=20
 persist.sys.composition.type=c2d
 persist.sys.ui.hw=1
 video.accelerate.hw=1
-
-
 persist.sys.composition.type=gpu
 debug.qc.hardware=true
 debug.qctwa.statusbar=1
-
 debug.egl.profiler=1
-
 debug.composition.type=gpu
-
 ro.product.gpu.driver=1
 persist.sys.use_16bpp_alpha=1
 persist.sampling_profiler=0
 hwui.render_dirty_regions=false
 hwui.disable_vsync=true
-
-
 power.saving.mode=1
-
 ro.vold.umsdirtyratio=20
 
 # Battery save
@@ -60,7 +49,6 @@ dalvik.vm.checkjni=false
 dalvik.vm.execution-mode=int:jit
 ro.ril.power_collapse=1
 power_supply.wakeup=enable
-
 ro.config.hw_power_saving=1
 
 # Sensor Tweaks
@@ -109,19 +97,13 @@ dalvik.vm.dexopt-flags=m=y,v=n,o=v
 # Miscellaneous Tweaks for performance
 ro.config.hw_menu_unlockscreen=false
 persist.sys.use_dithering=0
-
 ro.mot.eri.losalert.delay=1000
 
 # Smoother video streaming and tweak media
 media.stagefright.enable-player=true
 media.stagefright.enable-meta=true
-media.stagefright.enable-scan=true
 media.stagefright.enable-http=true
-media.stagefright.enable-aac=true
-media.stagefright.enable-qcp=true
 media.stagefright.enable-record=true
-
-debug.composition.type=gpu
 
 # art optimization
 dalvik.vm.image-dex2oat-filter=speed
