@@ -113,6 +113,8 @@ on boot
 
     # fix bt_addr file group permission on some devices
     chown radio bluetooth /efs/bluetooth/bt_addr
+    # set bt_addr file permission value to 640 as on some devices is set at an higher value
+    chmod 0640 /efs/bluetooth/bt_addr
 
     #Create QMUX deamon socket area
     mkdir /dev/socket/qmux_radio 0770 radio radio
