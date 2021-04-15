@@ -111,6 +111,9 @@ on boot
     chown radio system /efs/bluetooth
     chmod 0775 /efs/bluetooth
 
+    # fix bt_addr file group permission on some devices
+    chown radio bluetooth /efs/bluetooth/bt_addr
+
     #Create QMUX deamon socket area
     mkdir /dev/socket/qmux_radio 0770 radio radio
     chmod 2770 /dev/socket/qmux_radio
