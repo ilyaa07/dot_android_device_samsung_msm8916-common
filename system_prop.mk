@@ -228,3 +228,7 @@ PRODUCT_ODM_PROPERTIES += \
     persist.service.adb.enable=1 \
     persist.service.debuggable=1 \
     persist.sys.usb.config=mtp,adb
+
+# System
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.binary_xml=false
