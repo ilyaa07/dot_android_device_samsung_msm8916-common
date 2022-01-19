@@ -139,6 +139,10 @@ PRODUCT_PACKAGES += \
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service.samsung-qcom
+    
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.samsungfake
 
 # Doze
 PRODUCT_PACKAGES += \
