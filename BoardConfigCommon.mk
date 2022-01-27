@@ -20,7 +20,6 @@ COMMON_PATH := device/samsung/msm8916-common
 
 
 # Architecture/platform
-FORCE_32_BIT := true
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_BOARD_PLATFORM := msm8916
