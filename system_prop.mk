@@ -131,10 +131,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.low=1001 \
     ro.lmk.medium=0 \
     ro.lmk.critical=800 \
-    ro.lmk.critical_upgrade=false \
-    ro.lmk.upgrade_pressure=100 \
-    ro.lmk.downgrade_pressure=100 \
-    ro.lmk.kill_heaviest_task=true \
+    ro.lmk.critical_upgrade?=false \
+    ro.lmk.upgrade_pressure?=100 \
+    ro.lmk.downgrade_pressure?=100 \
+    ro.lmk.kill_heaviest_task?=true \
     ro.lmk.kill_timeout_ms=15 \
     ro.lmk.use_minfree_levels=true \
     ro.lmk.enhance_batch_kill=true \
@@ -218,7 +218,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Debugging
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.adb.secure=0 \
+    ro.adb.secure?=0 \
     persist.service.adb.enable=1 \
     persist.service.debuggable=1 \
     persist.sys.usb.config=mtp,adb
