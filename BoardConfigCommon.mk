@@ -31,6 +31,10 @@ TARGET_USES_64_BIT_BINDER := true
 
 # Allow overriding commands during build
 BUILD_BROKEN_DUP_RULES := true
+
+# Allow installation of ELF prebuilds in product_copy_files
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
