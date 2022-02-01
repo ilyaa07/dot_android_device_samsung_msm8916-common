@@ -88,6 +88,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.cpurend.vsync=false \
+    debug.renderengine.backend=threaded \
     debug.composition.type=c2d \
     debug.egl.hw=1 \
     debug.sf.hw=1 \
