@@ -158,6 +158,8 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET     := 0x02000000
 LZMA_RAMDISK_TARGETS := recovery
+# Smaller kernel config for recovery
+TARGET_KERNEL_RECOVERY_CONFIG := msm8916_sec_recovery_defconfig
 TARGET_KERNEL_CONFIG := msm8916_sec_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
 TARGET_KERNEL_SELINUX_LOG_CONFIG := selinux_log_defconfig
