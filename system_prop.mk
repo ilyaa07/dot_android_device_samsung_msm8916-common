@@ -122,20 +122,25 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.swhevccodectype=0 \
     mm.enable.qcom_parser=3183219 \
     mm.enable.smoothstreaming=true \
-    mmp.enable.3g2=true
+    mmp.enable.3g2=true \
+    vendor.mediacodec.binder.size=6
+
+# System
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vndk.version=current
 
 # Memory optimization
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_ODM_PROPERTIES += \
     ro.vendor.qti.am.reschedule_service=true \
     ro.vendor.qti.sys.fw.bservice_enable=true \
     dalvik.vm.madvise-random=true \
     ro.lmk.low=1001 \
     ro.lmk.medium=0 \
     ro.lmk.critical=800 \
-    ro.lmk.critical_upgrade?=false \
-    ro.lmk.upgrade_pressure?=100 \
-    ro.lmk.downgrade_pressure?=100 \
-    ro.lmk.kill_heaviest_task?=true \
+    ro.lmk.critical_upgrade=false \
+    ro.lmk.upgrade_pressure=100 \
+    ro.lmk.downgrade_pressure=100 \
+    ro.lmk.kill_heaviest_task=true \
     ro.lmk.kill_timeout_ms=15 \
     ro.lmk.use_minfree_levels=true \
     ro.lmk.enhance_batch_kill=true \
@@ -218,8 +223,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.wfd.virtual=0
 
 # Debugging
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.adb.secure?=0 \
+PRODUCT_ODM_PROPERTIES += \
+    ro.adb.secure=0 \
     persist.service.adb.enable=1 \
     persist.service.debuggable=1 \
     persist.sys.usb.config=mtp,adb
