@@ -42,4 +42,7 @@
     <!-- Doze: pulse parameter - delay to wait for the screen to wake up after an intent -->
     <integer name="doze_pulse_delay_in_intent">0</integer>
 
+    <!-- Whether to clip notification contents with a rounded rectangle. Might be expensive on
+         certain GPU's and thus can be turned off with only minimal visual impact. -->
+    <bool name="config_notifications_round_rect_clipping">false</bool>
 </resources>
