@@ -94,7 +94,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     libcamera_shim \
     camera.msm8916 \
-    Snap \
     GcamGo
 
 # Connectivity Engine support
