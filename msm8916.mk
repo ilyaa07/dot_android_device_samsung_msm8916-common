@@ -313,7 +313,6 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    fstab.qcom \
     init.class_main.sh \
     init.link_ril_db.sh \
     init.qcom.bt.sh \
