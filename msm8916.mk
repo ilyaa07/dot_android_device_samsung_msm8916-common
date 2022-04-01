@@ -96,6 +96,10 @@ PRODUCT_PACKAGES += \
     camera.msm8916 \
     GcamGo
 
+# ConfigStore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Connectivity Engine support
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
