@@ -206,6 +206,8 @@ TARGET_USES_INTERACTION_BOOST := true
 
 # Radio
 TARGET_USES_OLD_MNC_FORMAT := true
+# Protobuf
+PROTOBUF_SUPPORTED := true
 
 # Qualcomm support
 TARGET_USES_QCOM_BSP := true
