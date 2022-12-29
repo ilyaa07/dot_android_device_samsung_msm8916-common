@@ -294,3 +294,7 @@ fi
 cp /firmware/image/modem_pr/mbn_ota.txt /data/misc/radio/modem_config
 chown radio.radio /data/misc/radio/modem_config/mbn_ota.txt
 echo 1 > /data/misc/radio/copy_complete
+
+echo 0 > enable_adaptive_lmk
+echo "sudo cp enable_adaptive_lmk /sys/module/lowmemorykiller/parameters/" > boot
+cp enable_adaptive_lmk /sys/module/lowmemorykiller/parameters/

@@ -41,12 +41,19 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
+    android.hardware.soundtrigger@2.0-impl \
+    android.hardware.soundtrigger@2.0-service \
+    android.hardware.soundtrigger@2.1-impl \
+    android.hardware.soundtrigger@2.2-impl \
+    android.hardware.soundtrigger@2.3-impl \
+    sound_trigger.stub.default \
     audio.a2dp.default \
     audio.bluetooth.default \
     audio.primary.msm8916 \
     audio.primary.default \
     audio.r_submix.default \
     audio.usb.default \
+    audio.usbv2.default \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -95,10 +102,6 @@ PRODUCT_PACKAGES += \
     libcamera_shim \
     camera.msm8916 \
     GcamGo
-
-# ConfigStore
-PRODUCT_PACKAGES += \
-    disable_configstore
 
 # Connectivity Engine support
 PRODUCT_PACKAGES += \
@@ -181,7 +184,8 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-service.software
+    android.hardware.gatekeeper@1.0-service.software \
+    android.hardware.gatekeeper@1.0.vendor
 
 # GPS Configs
 PRODUCT_COPY_FILES += \
@@ -222,9 +226,8 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0-service-qti.rc \
-    android.hardware.keymaster@4.1.vendor \
-    android.hardware.keymaster@4.1-service
+    android.hardware.keymaster@3.0-impl \
+    android.hardware.keymaster@3.0-service
 
 # Lights
 PRODUCT_PACKAGES += \

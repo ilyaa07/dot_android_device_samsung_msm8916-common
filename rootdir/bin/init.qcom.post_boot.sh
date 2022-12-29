@@ -567,3 +567,7 @@ echo "80 80 80 80" >/sys/bus/cpu/devices/cpu0/core_ctl/busy_up_thres
 sleep 5
 echo 1612000 >/sys/bus/cpu/devices/cpu0/cpufreq/scaling_max_freq
 echo 200000 >/sys/bus/cpu/devices/cpu0/cpufreq/scaling_min_freq
+
+echo 0 > enable_adaptive_lmk
+echo "sudo cp enable_adaptive_lmk /sys/module/lowmemorykiller/parameters/" > boot
+cp enable_adaptive_lmk /sys/module/lowmemorykiller/parameters/
